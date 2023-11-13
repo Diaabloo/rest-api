@@ -1,0 +1,9 @@
+{
+    "codegpt.apiKey": "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",
+    "editor.tabSize": 4,
+    "terminal.integrated.tabs.defaultColor": "terminal.ansiRed",
+    "prettier.tabWidth": 4,
+    "cSpell.words": [
+        "ords"
+    ]
+}

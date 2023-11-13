@@ -1,0 +1,15 @@
+//define how user should look like in the app
+const mongoose = require('mongoose');
+
+const userSchema = mongoose.Schema({
+    _id : mongoose.Schema.Types.ObjectId,
+    email : {   type : String ,
+                required : true,
+                unique : true,
+                //validate an email address using a regular expression
+                match : /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+            },
+    password : {type : String , required :true}
+})
+
+module.exports = mongoose.model('User',userSchema)
